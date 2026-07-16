@@ -18,6 +18,8 @@
                              (:static-file "ceigen_lite.i686-pc-linux-gnu.spec")
                              (:static-file "ceigen_lite.i686-pc-windows-msvc.spec")
                              (:static-file "ceigen_lite.i686-unknown-linux-android.spec")
+                             (:static-file "ceigen_lite.powerpc64-pc-linux-gnu.spec")
+                             (:static-file "ceigen_lite.powerpc64le-pc-linux-gnu.spec")
                              (:static-file "ceigen_lite.x86_64-apple-darwin9.spec")
                              (:static-file "ceigen_lite.x86_64-pc-linux-gnu.spec")
                              (:static-file "ceigen_lite.x86_64-pc-windows-msvc.spec")
