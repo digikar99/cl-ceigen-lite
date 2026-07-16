@@ -5,7 +5,8 @@
   :license "MIT"
   :depends-on ("uiop"
                "cffi"
-               "cl-autowrap")
+               "cl-autowrap"
+               "trivial-features")
   :serial t
   :components ((:module "specs"
                 :components ((:static-file "ceigen_lite.aarch64-pc-linux-gnu.spec")
