@@ -23,6 +23,10 @@
    #:lognormal!
    #:normal
    #:normal!
+   #:uniform-real
+   #:uniform-real!
+   #:weibull
+   #:weibull!
 
    #:bernoulli
    #:bernoulli!
