@@ -39,8 +39,14 @@ jobs:
         mkdir -p ~/quicklisp/local-projects/cl-ceigen-lite
         mv * ~/quicklisp/local-projects/cl-ceigen-lite
 
-    - name: Compile System
-      run: cl --eval '(ql:quickload "ceigen-lite")'
+    - name: Compile Systems
+      run: cl --eval '(ql:quickload (list "ceigen-lite" "ceigen-rand"))'
 
-    - name: Load System
-      run: cl --eval '(asdf:compile-system "ceigen-lite" :force t)' --eval '(asdf:load-system "ceigen-lite")'
+    - name: Load Systems
+      run: |
+        cl --eval '(asdf:compile-system "ceigen-lite" :force t)' \
+           --eval '(asdf:load-system "ceigen-lite")' \
+           --eval '(asdf:compile-system "ceigen-rand" :force t)' \
+           --eval '(asdf:load-system "ceigen-rand")' \
+           --eval '(print (ceigen-rand:normal 10 100 10))' \
+           --eval '(uiop:quit)'
