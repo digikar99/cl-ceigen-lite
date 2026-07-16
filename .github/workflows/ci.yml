@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install libopenblas
-      run: sudo apt install libopenblas-base
+      run: sudo apt install libopenblas0
 
     - name: Update $PATH
       run: |
