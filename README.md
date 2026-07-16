@@ -77,6 +77,10 @@ Plot using [cl-vega-lite](https://github.com/digikar99/cl-vega-lite).
 - lognormal!
 - normal
 - normal!
+- uniform-real
+- uniform-real!
+- weibull
+- weibull!
 
 ### Integer distributions
 
